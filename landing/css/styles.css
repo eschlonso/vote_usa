@@ -1,0 +1,360 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/* fuentes*/
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:800');
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #fbca05;
+}
+.BgGradient {
+	background: rgba(255,255,255,1);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(251,202,5,1) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(251,202,5,1)));
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(251,202,5,1) 100%);
+	background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(251,202,5,1) 100%);
+	background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(251,202,5,1) 100%);
+	background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(251,202,5,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#fbca05', GradientType=1 );
+}
+#flag {
+	width: 500px;
+	height: 1024px;
+	background-repeat: no-repeat;
+	background-position: left;
+	z-index: 10;
+	left: 0;
+	top: 0;
+	position: fixed;
+}
+#flagLeft {
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	filter: FlipH;
+	-ms-filter: "FlipH";
+	height: 1024px;
+	background-repeat: no-repeat;
+	background-position: right;
+	z-index: 10;
+	right: -40px;
+	top: 0;
+	position: fixed;
+}
+#contenedor {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	text-align: center;
+}
+#logo {
+	width: 100%;
+	height: auto;
+	margin-top: 3.750em;
+	text-align: center;
+}
+h1 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+	font-size: 4em;
+	letter-spacing: 1px;
+	color: #000000;
+	/*width: 50%;*/
+	height: auto;
+	margin: auto;
+	text-align: center;
+}
+.winner {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+	font-size: 2em;
+	text-transform: uppercase;
+	color: #cc0000;
+	width: 50%;
+	margin: auto;
+	text-align: center;
+}
+.titular {
+	font-family: Helvetica, sans-serif;
+	font-size: 1em;
+	letter-spacing: 2px;
+	color: #1b3f7a;
+	height: auto;
+	margin: auto;
+	text-align: center;
+	font-weight: normal;
+}
+#bajada {
+	font-family: Helvetica, sans-serif;
+	font-size: 1em;
+	height: auto;
+	color: #c7ab5d;
+	text-align: center;
+	width: auto;
+	margin: 0, 10%, 0, 10%;
+	min-width: 250px;
+	resize: both;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#WinName {
+	text-align: center;
+	width: 50%;
+	display: inline;
+	vertical-align: central;
+}
+hr {
+	background-color: black;
+	height: 4px;
+	border: 0;
+}
+#btleft {
+	width: 25%;
+	float: left;
+	margin-left: 20%;
+	left: 0;
+	text-align: center;
+	margin-right: 10px;
+}
+#btright {
+	width: 25%;
+	float: right;
+	margin-right: 20%;
+	margin-left: 10px;
+	text-align: center;
+}
+.btFormat {
+	color: #FFF;
+	background-color: #cc0000;
+	height: 35px;
+	padding-top: 15px;
+	vertical-align: middle;
+	font-family: 'OpenSans', sans-serif;
+	font-weight: 800;
+	border-radius: 15px 15px 15px 15px;
+	-moz-border-radius: 15px 15px 15px 15px;
+	-webkit-border-radius: 15px 15px 15px 15px;
+}
+#footer {
+	width: 100%;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+	color: #000000;
+	font-size: 0.75em;
+	height: 80px;
+	float: left;
+	vertical-align: bottom;
+}
+.footer {
+	color: #0000000 !important;
+	text-decoration: none;
+}
+.footer:hover {
+	color: #999999 !important;
+	text-decoration: underline;
+}
+.footer a:link {
+	color: #999999 !important;
+}
+.footer a:visited {
+	color: #999999 !important;
+}
+.redes {
+	background-image: url(../img/bg_redes.png);
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 35px;
+	float: left;
+	color: #FFF;
+	padding-top: 6px;
+}
+.redes:hover {
+	background-image: url(../img/bg_redes_hover.png);
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 35px;
+	float: left;
+	color: #FFF;
+	padding-top: 6px;
+}
+.icoRedes {
+	color: #FFF !important;
+}
+.icoRedes:link {
+	color: #FFF;
+}
+.icoRedes:visited {
+	color: #FFF;
+}
+#share {
+	width: 100%;
+	text-align: center;
+	height: auto;
+	display: table;
+}
+#iconos {
+	width: 120px;
+	float: none;
+	display: inline-block;
+}
+#compartir {
+	height: 50px;
+	vertical-align: middle;
+	margin: auto;
+	text-align: center;
+}
+.imgwrapper {
+	resize: both;
+	height: auto;
+	min-width: 200px;
+	max-width: 100%;
+}
+#imgCharacter {
+	width: 100%;
+	text-align: center;
+	z-index: 100px;
+}
+.imgwrapperCharacter {
+	resize: both;
+	height: auto;
+	min-width: 300px;
+	max-width: 100%;
+}
+/* AGREGADO */
+
+
+
+.legalesForm a {
+	color: #1b3f7a;
+}
+#continuar {
+	cursor: pointer;
+}
+#titularVideo {
+	width: 50%;
+	height: auto;
+	margin: auto;
+	text-align: center;
+}
+.titularVideo {
+	font-family: Helvetica, sans-serif;
+	font-size: 1.2em;
+	letter-spacing: 1px;
+	color: #003e7e;
+	text-align: center;
+	font-weight: normal
+}
+#subTitVideo {
+	font-family: Helvetica, sans-serif;
+	font-size: 1em;
+	height: auto;
+	color: #7e7f7f;
+	text-align: center;
+	width: auto;
+	margin: 0, 10%, 0, 10%;
+	min-width: 250px;
+	resize: both;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.txtRestFont {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+	font-size: 2.5em;
+	color: #000000;
+	padding-left: 0;
+	line-height: 1.5em;
+	text-transform: uppercase;
+	text-align: left;
+	list-style-type: none;
+}
+.OtherWin {
+	font-family: Helvetica, sans-serif;
+	font-size: 1.5em;
+	color: #c2a953;
+	font-weight: normal;
+}
+.otherPer {
+	color: #cc0000;
+}
+#WinList {
+	width: auto;
+	height: auto;
+	text-align: center;
+	padding: 0 18% 10px 18%;
+}
+
+@media screen and (max-width:1366px) {
+.txtRestFont {
+	font-size: 1.9em;
+}
+}
+
+@media screen and (max-width:1280px) {
+.txtRestFont {
+	font-size: 1.9em;
+	color: #000;
+}
+}
+
+@media screen and (max-width:1024px) {
+.txtRestFont {
+	font-size: 1.9em;
+}
+.OtherWin {
+	font-size: 1.2em;
+}
+}
+
+@media screen and (max-width:800px) {
+#txtOther, #Mendoza {
+	clear: both;
+	width: 100%;
+	margin-bottom: 30px;
+}
+.txtRestFont {
+	font-size: 1.9em;
+}
+.OtherWin {
+	font-size: 1.2em;
+}
+}
+ @media screen and (max-width:600px) {
+#flag {
+	left: -10px;
+}
+ @media screen and (max-width:320px) {
+ #flag {
+ visibility:hidden;
+}
+ #flagLeft {
+ visibility:hidden;
+}
+ #WinList {
+ width: auto;
+ height: auto;
+ text-align: center;
+ padding: 0 18% 10px 18%;
+}
+ #txtOther, #Mendoza {
+ clear: both;
+ width: 100%;
+ margin-bottom: 30px;
+}
+.txtRestFont {
+ font-size: 1.5em;
+}
+.OtherWin {
+ font-size: 1.2em;
+}
+.btFormat {
+ font-size: 0.6em;
+}
+}
